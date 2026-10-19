@@ -1,56 +1,223 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aniket Digital Marketing Agency</title>
-  <style>
-    body { margin:0; font-family:Arial,sans-serif; background:#f5f7ff; color:#172033; }
-    header { background:#10172a; color:white; padding:20px 7%; }
-    header a { color:white; text-decoration:none; margin-right:20px; }
-    main { max-width:1100px; margin:auto; padding:80px 20px; }
-    h1 { font-size:48px; }
-    span { color:#5b4bff; }
-    .btn { display:inline-block; background:#5b4bff; color:white; padding:14px 20px; border-radius:8px; text-decoration:none; }
-    section { padding:25px 0; }
-    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
-    article { background:white; padding:24px; border-radius:14px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Aniket Digital provides SEO, Local SEO, Google Ads, Meta Ads and website development services in Indore.">
+<title>Aniket Digital | Digital Marketing Agency</title>
+<style>
+:root{--purple:#6557ff;--navy:#10172b;--text:#172033;--muted:#647084;--line:#e7eaf2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;font-family:Arial,sans-serif;color:var(--text);background:#f7f8fc;line-height:1.7}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid var(--line)}
+nav{min-height:75px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:22px;font-weight:800;letter-spacing:-1px}
+.brand span{color:var(--purple)}
+.links{display:flex;gap:23px;font-size:14px;font-weight:700}
+.links a:hover{color:var(--purple)}
+.btn{display:inline-block;background:var(--purple);color:white;padding:13px 20px;border-radius:9px;font-weight:700;border:0;cursor:pointer}
+.btn:hover{opacity:.88}
+.hero{padding:90px 0;background:radial-gradient(circle at 85% 20%,#e6e2ff,transparent 32%),linear-gradient(120deg,#fff,#f5f6ff)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.kicker{font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--purple);text-transform:uppercase}
+h1{font-size:clamp(42px,5vw,66px);line-height:1.08;letter-spacing:-2.5px;margin:20px 0}
+.gradient{color:var(--purple)}
+.lead{font-size:18px;color:var(--muted);max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.btn-light{display:inline-block;padding:12px 19px;border:1px solid #dce0ec;border-radius:9px;font-weight:700;background:white}
+.dashboard{padding:27px;background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 25px 60px #202b5012}
+.dashboard h3{margin-top:0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{padding:18px;background:#f4f3ff;border-radius:13px}
+.stat strong{font-size:25px;display:block}
+.stat small{color:var(--muted)}
+.barset{height:110px;display:flex;align-items:end;gap:8px;margin-top:22px}
+.barset i{flex:1;background:linear-gradient(#9b8fff,#5c65ff);border-radius:5px 5px 0 0}
+.trust{background:white;border-block:1px solid var(--line);padding:25px 0;text-align:center}
+.trust-row{display:flex;justify-content:space-around;gap:18px;flex-wrap:wrap;color:#7d8799;font-weight:800;font-size:12px;margin-top:12px}
+section.content{padding:80px 0}
+.white{background:white}
+.section-head{text-align:center;max-width:720px;margin:0 auto 38px}
+h2{font-size:clamp(30px,4vw,43px);line-height:1.2;letter-spacing:-1.5px;margin:10px 0}
+.section-head p,.card p,.about p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;padding:25px;border:1px solid var(--line);border-radius:16px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 30px #202b5010}
+.icon{width:45px;height:45px;border-radius:12px;background:#efedff;color:var(--purple);display:grid;place-items:center;font-size:23px;font-weight:bold}
+.card h3{margin:17px 0 7px}
+.more{color:var(--purple);font-weight:800;font-size:13px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.dark-panel{background:var(--navy);color:white;padding:35px;border-radius:20px}
+.dark-panel p{color:#c6cce0}
+.benefits{padding-left:20px}
+.benefits li{margin:12px 0}
+.case{background:#fff;padding:25px;border:1px solid var(--line);border-radius:16px}
+.tag{color:var(--purple);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.price{background:white;border:1px solid var(--line);padding:26px;border-radius:16px}
+.price.featured{border:2px solid var(--purple);box-shadow:0 15px 30px #6557ff12}
+.price strong{font-size:29px}
+.price small{color:var(--muted)}
+.price ul{padding-left:20px;color:var(--muted);font-size:14px}
+.faq{max-width:800px;margin:auto;display:grid;gap:12px}
+details{padding:18px 20px;border:1px solid var(--line);background:white;border-radius:12px}
+summary{font-weight:800;cursor:pointer}
+details p{color:var(--muted);font-size:14px}
+.contact{background:var(--navy);color:white;border-radius:22px;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact p{color:#c6cce0}
+form{background:white;color:var(--text);border-radius:14px;padding:22px}
+label{display:block;font-size:12px;font-weight:800;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #dce0ec;border-radius:8px;font:14px Arial}
+textarea{min-height:85px}
+form button{width:100%;margin-top:15px}
+footer{background:#090e1c;color:#d5d9e6;padding:30px 0}
+footer p{font-size:13px;color:#aab2c6}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+@media(max-width:800px){
+.hero-grid,.split,.contact{grid-template-columns:1fr}
+.grid{grid-template-columns:repeat(2,1fr)}
+.links{gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.hero{padding:60px 0}
+}
+@media(max-width:560px){
+.grid{grid-template-columns:1fr}
+nav{align-items:flex-start;padding:17px 0;flex-direction:column}
+.links{justify-content:flex-start;gap:15px;flex-wrap:wrap}
+h1{font-size:43px;letter-spacing:-1.5px}
+section.content{padding:55px 0}
+.contact{padding:20px}
+}
+</style>
 </head>
 <body>
-  <header>
-    <strong>Aniket Digital</strong>
-    <nav style="margin-top:15px">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-      <p>DIGITAL MARKETING AGENCY · INDORE</p>
-      <h1>Grow Your Business With <span>Digital Marketing.</span></h1>
-      <p>SEO, Local SEO, Google Ads, Meta Ads and website development for growing businesses.</p>
-      <a class="btn" href="https://wa.me/917970035537">Discuss Your Project</a>
-    </section>
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="cards">
-        <article><h3>SEO</h3><p>Improve organic search visibility.</p></article>
-        <article><h3>Google Business Profile</h3><p>Strengthen your local presence.</p></article>
-        <article><h3>Google & Meta Ads</h3><p>Reach relevant audiences through paid campaigns.</p></article>
-        <article><h3>Website Development</h3><p>Build a responsive business website.</p></article>
-      </div>
-    </section>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Selected projects and case studies will be added here.</p>
-    </section>
-    <section id="contact">
-      <h2>Let's Work Together</h2>
-      <a class="btn" href="https://wa.me/917970035537">Contact on WhatsApp</a>
-    </section>
-  </main>
+
+<header>
+<nav class="wrap">
+<a class="brand" href="#home">A<span>.</span> ANIKET DIGITAL</a>
+<div class="links">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="wrap hero-grid">
+<div>
+<div class="kicker">Digital Marketing Agency · Indore</div>
+<h1>Grow Your Business With <span class="gradient">Strategic Digital Marketing.</span></h1>
+<p class="lead">We help businesses improve online visibility, attract relevant customers and build a stronger digital presence through practical marketing strategies.</p>
+<div class="actions">
+<a class="btn" href="#contact">Get Free Consultation ↗</a>
+<a class="btn-light" href="#services">Explore Services ↓</a>
+</div>
+<p>✓ Clear strategy &nbsp; ✓ Transparent reporting &nbsp; ✓ Business-focused execution</p>
+</div>
+<div class="dashboard">
+<h3>Your Digital Growth Plan</h3>
+<p style="color:#647084">A smarter approach to growing your online presence.</p>
+<div class="stats">
+<div class="stat"><small>Organic Growth</small><strong>SEO</strong><small>Long-term visibility</small></div>
+<div class="stat"><small>Paid Campaigns</small><strong>Ads</strong><small>Targeted reach</small></div>
+<div class="stat"><small>Local Presence</small><strong>Maps</strong><small>Local discovery</small></div>
+<div class="stat"><small>Online Experience</small><strong>Web</strong><small>Better conversion paths</small></div>
+</div>
+<div class="barset">
+<i style="height:25%"></i><i style="height:40%"></i><i style="height:33%"></i><i style="height:55%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:66%"></i><i style="height:88%"></i><i style="height:100%"></i>
+</div>
+</div>
+</div>
+</section>
+
+<div class="trust"><div class="wrap">
+<div class="kicker">Digital solutions built around your goals</div>
+<div class="trust-row"><span>SEO</span><span>LOCAL SEARCH</span><span>GOOGLE ADS</span><span>META ADS</span><span>WEBSITE DESIGN</span></div>
+</div></div>
+
+<section class="content" id="services">
+<div class="wrap">
+<div class="section-head"><div class="kicker">Our Services</div><h2>Everything You Need to Grow Online</h2><p>Practical digital marketing services tailored to your business, audience and budget.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">⌕</div><h3>SEO Services</h3><p>Technical SEO, on-page optimisation, content improvements and internal linking to support organic visibility.</p><a class="more" href="#contact">Discuss SEO ↗</a></article>
+<article class="card"><div class="icon">⌖</div><h3>Local SEO & Google Profile</h3><p>Improve your Google Business Profile, local relevance and customer discovery across local searches.</p><a class="more" href="#contact">Improve Local Visibility ↗</a></article>
+<article class="card"><div class="icon">↗</div><h3>Google Ads</h3><p>Search campaign setup, keyword targeting, conversion tracking and ongoing campaign optimisation.</p><a class="more" href="#contact">Plan Google Ads ↗</a></article>
+<article class="card"><div class="icon">◎</div><h3>Meta Ads</h3><p>Facebook and Instagram campaigns to reach relevant audiences and generate enquiries.</p><a class="more" href="#contact">Discuss Meta Ads ↗</a></article>
+<article class="card"><div class="icon">▤</div><h3>Website Development</h3><p>Responsive business websites with clear messaging, fast-loading layouts and SEO-friendly foundations.</p><a class="more" href="#contact">Build Your Website ↗</a></article>
+<article class="card"><div class="icon">◉</div><h3>Social Media Marketing</h3><p>Content planning and channel management to build consistency and strengthen brand communication.</p><a class="more" href="#contact">Plan Your Content ↗</a></article>
+</div>
+</div>
+</section>
+
+<section class="content white" id="about">
+<div class="wrap split">
+<div class="dark-panel"><div class="kicker">Our Approach</div><h2>Marketing should be an investment, not guesswork.</h2><p>Understand the audience. Choose the right channels. Measure the work. Improve the strategy.</p></div>
+<div class="about"><div class="kicker">About Aniket Digital</div><h2>A Practical Partner for Business Growth</h2><p>We help businesses strengthen their digital foundations through search visibility, targeted advertising and conversion-focused websites.</p><ul class="benefits"><li>Strategy aligned with your business goals</li><li>Clear priorities and practical execution</li><li>Reporting focused on useful outcomes</li><li>Flexible support for local and growing businesses</li></ul><a class="btn" href="#contact">Let's Discuss Your Business ↗</a></div>
+</div>
+</section>
+
+<section class="content" id="portfolio">
+<div class="wrap"><div class="section-head"><div class="kicker">Portfolio</div><h2>Solutions for Real Business Challenges</h2><p>Sample project categories. Add approved client names and verified results when you have permission to publish them.</p></div>
+<div class="grid">
+<article class="case"><span class="tag">Local SEO</span><h3>Local Business Visibility</h3><p>Google Business Profile improvements, local pages and clearer paths from search to enquiry.</p></article>
+<article class="case"><span class="tag">Website SEO</span><h3>Organic Search Foundation</h3><p>Metadata, page structure, internal linking and technical checks to support search visibility.</p></article>
+<article class="case"><span class="tag">Paid Media</span><h3>Lead Generation Campaigns</h3><p>Campaign planning, audience targeting, landing page alignment and conversion tracking.</p></article>
+</div></div>
+</section>
+
+<section class="content white" id="pricing">
+<div class="wrap"><div class="section-head"><div class="kicker">Pricing</div><h2>Clear Starting Packages</h2><p>Indicative starting prices. Final quotation depends on project scope and business needs.</p></div>
+<div class="grid">
+<article class="price"><h3>Local Visibility</h3><p>For businesses improving their local search presence.</p><strong>₹3,000</strong> <small>/ month onwards</small><ul><li>Google Business Profile support</li><li>Local visibility recommendations</li><li>Monthly activity summary</li></ul><a class="btn" href="#contact">Request a Quote</a></article>
+<article class="price featured"><div class="kicker">Popular Choice</div><h3>SEO Growth</h3><p>For businesses improving website visibility and organic discovery.</p><strong>₹7,000</strong> <small>/ month onwards</small><ul><li>On-page SEO improvements</li><li>Technical checks and priorities</li><li>Internal linking recommendations</li><li>Progress reporting</li></ul><a class="btn" href="#contact">Discuss SEO</a></article>
+<article class="price"><h3>Paid Ads Management</h3><p>For businesses reaching customers through paid campaigns.</p><strong>₹5,000</strong> <small>/ month onwards</small><ul><li>Campaign setup and management</li><li>Audience or keyword targeting</li><li>Performance monitoring</li><li>Optimisation recommendations</li></ul><a class="btn" href="#contact">Plan Your Ads</a></article>
+</div><p style="text-align:center;color:#647084;font-size:12px">Advertising spend and third-party tools are separate where applicable.</p>
+</div>
+</section>
+
+<section class="content" id="faq">
+<div class="wrap"><div class="section-head"><div class="kicker">FAQs</div><h2>Frequently Asked Questions</h2></div>
+<div class="faq">
+<details><summary>Which businesses can work with you?</summary><p>We can discuss local service businesses, clinics, professional services, e-commerce and other growing businesses.</p></details>
+<details><summary>How long does SEO take to show results?</summary><p>SEO is a long-term channel. Timelines depend on competition, website condition, location and implementation. Specific rankings cannot be guaranteed.</p></details>
+<details><summary>Is ad spend included in the management fee?</summary><p>No. Advertising spend is paid separately to Google or Meta.</p></details>
+<details><summary>Can I start with one service?</summary><p>Yes. You can start with one service and expand as your business needs change.</p></details>
+</div></div>
+</section>
+
+<section class="content" id="contact">
+<div class="wrap contact">
+<div><div class="kicker">Let's Talk</div><h2>Ready to grow your business online?</h2><p>Share your requirements and start a practical conversation about your next steps.</p><p>📍 Indore, Madhya Pradesh, India</p><p>💬 WhatsApp: +91 79700 35537</p></div>
+<form id="leadForm">
+<label for="name">Your Name *</label><input id="name" name="name" required placeholder="Enter your name">
+<label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" required placeholder="+91..." inputmode="tel">
+<label for="business">Business Name</label><input id="business" name="business" placeholder="Your business">
+<label for="service">Service Required *</label><select id="service" name="service" required><option value="">Choose service</option><option>SEO</option><option>Local SEO / Google Business Profile</option><option>Google Ads</option><option>Meta Ads</option><option>Website Development</option><option>Social Media Marketing</option><option>Not sure yet</option></select>
+<label for="message">Your Goal</label><textarea id="message" name="message" placeholder="What would you like to achieve?"></textarea>
+<button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button>
+<p style="font-size:11px;color:#647084">The form opens WhatsApp with your details ready to send. It does not store submissions in a database.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap"><div class="brand">A<span>.</span> ANIKET DIGITAL</div><p>Digital marketing and website services for growing businesses.</p><div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="https://wa.me/917970035537">WhatsApp ↗</a></div><p>© <span id="year"></span> Aniket Digital. All rights reserved.</p></div></footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('leadForm').addEventListener('submit',function(e){
+e.preventDefault();
+const d=new FormData(this);
+const msg=`Hello Aniket Digital!%0AName: ${encodeURIComponent(d.get('name'))}%0APhone: ${encodeURIComponent(d.get('phone'))}%0ABusiness: ${encodeURIComponent(d.get('business')||'Not provided')}%0AService: ${encodeURIComponent(d.get('service'))}%0AGoal: ${encodeURIComponent(d.get('message')||'Not provided')}`;
+window.open('https://wa.me/917970035537?text='+msg,'_blank');
+});
+</script>
 </body>
 </html>
