@@ -4,219 +4,407 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Aniket Digital provides SEO, Local SEO, Google Ads, Meta Ads and website development services in Indore.">
-<title>Aniket Digital | Digital Marketing Agency</title>
+<meta name="description" content="Aniket Digital Marketing Agency in Indore provides SEO, Local SEO, Google Business Profile management, Google Ads, Meta Ads, social media marketing and website development.">
+<title>Aniket Digital | Digital Marketing Agency in Indore</title>
 <style>
-:root{--purple:#6557ff;--navy:#10172b;--text:#172033;--muted:#647084;--line:#e7eaf2}
+:root{--navy:#0b1225;--purple:#6557ff;--blue:#3377ff;--ink:#172033;--muted:#66738a;--line:#e5e9f2;--bg:#f7f8fc;--green:#087f5b}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{margin:0;font-family:Arial,sans-serif;color:var(--text);background:#f7f8fc;line-height:1.7}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
 a{text-decoration:none;color:inherit}
-.wrap{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid var(--line)}
-nav{min-height:75px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-size:22px;font-weight:800;letter-spacing:-1px}
+.wrap{width:min(1150px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:21px;font-weight:900;letter-spacing:-.8px}
 .brand span{color:var(--purple)}
-.links{display:flex;gap:23px;font-size:14px;font-weight:700}
+.links{display:flex;align-items:center;gap:20px;font-size:13px;font-weight:700}
 .links a:hover{color:var(--purple)}
-.btn{display:inline-block;background:var(--purple);color:white;padding:13px 20px;border-radius:9px;font-weight:700;border:0;cursor:pointer}
-.btn:hover{opacity:.88}
-.hero{padding:90px 0;background:radial-gradient(circle at 85% 20%,#e6e2ff,transparent 32%),linear-gradient(120deg,#fff,#f5f6ff)}
+.btn{display:inline-block;background:linear-gradient(110deg,var(--blue),var(--purple));color:#fff;padding:13px 20px;border-radius:9px;font-size:13px;font-weight:800;border:0;cursor:pointer}
+.btn-light{display:inline-block;background:#fff;border:1px solid var(--line);padding:12px 19px;border-radius:9px;font-size:13px;font-weight:800}
+.top{background:var(--navy);color:#dce2f3;padding:8px 0;font-size:12px}
+.top .wrap{display:flex;justify-content:space-between;gap:15px}
+.top a{color:white;font-weight:800}
+.hero{padding:85px 0;background:radial-gradient(ellipse at 85% 15%,#e6e3ff,transparent 34%),linear-gradient(130deg,#fff,#f5f6ff)}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
-.kicker{font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--purple);text-transform:uppercase}
-h1{font-size:clamp(42px,5vw,66px);line-height:1.08;letter-spacing:-2.5px;margin:20px 0}
+.kicker{color:var(--purple);font-size:11px;letter-spacing:1.7px;font-weight:900;text-transform:uppercase}
+.pill{display:inline-block;background:#efedff;color:#5546ec;border-radius:30px;padding:7px 12px;font-size:11px;font-weight:800}
+h1{font-size:clamp(42px,5vw,65px);line-height:1.08;letter-spacing:-2.5px;margin:22px 0}
 .gradient{color:var(--purple)}
-.lead{font-size:18px;color:var(--muted);max-width:600px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
-.btn-light{display:inline-block;padding:12px 19px;border:1px solid #dce0ec;border-radius:9px;font-weight:700;background:white}
-.dashboard{padding:27px;background:white;border:1px solid var(--line);border-radius:22px;box-shadow:0 25px 60px #202b5012}
-.dashboard h3{margin-top:0}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.stat{padding:18px;background:#f4f3ff;border-radius:13px}
-.stat strong{font-size:25px;display:block}
+.lead{font-size:17px;color:var(--muted);max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+.hero-points{font-size:12px;font-weight:700;color:#59657b}
+.hero-points span{margin-right:13px}
+.panel{padding:27px;border:1px solid var(--line);border-radius:20px;background:white;box-shadow:0 25px 60px #18254b12}
+.panel h3{margin-top:0}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:#f3f3ff;padding:16px;border-radius:12px}
+.stat strong{display:block;font-size:23px}
 .stat small{color:var(--muted)}
-.barset{height:110px;display:flex;align-items:end;gap:8px;margin-top:22px}
-.barset i{flex:1;background:linear-gradient(#9b8fff,#5c65ff);border-radius:5px 5px 0 0}
-.trust{background:white;border-block:1px solid var(--line);padding:25px 0;text-align:center}
-.trust-row{display:flex;justify-content:space-around;gap:18px;flex-wrap:wrap;color:#7d8799;font-weight:800;font-size:12px;margin-top:12px}
-section.content{padding:80px 0}
+.bars{height:85px;display:flex;align-items:end;gap:7px;margin-top:20px}
+.bars i{flex:1;background:linear-gradient(#9a8bff,#5573ff);border-radius:5px 5px 0 0}
+.trust{background:white;border-block:1px solid var(--line);padding:22px 0;text-align:center}
+.trustrow{display:flex;justify-content:space-around;gap:15px;flex-wrap:wrap;margin-top:12px;color:#788398;font-size:12px;font-weight:900}
+section.section{padding:76px 0}
 .white{background:white}
-.section-head{text-align:center;max-width:720px;margin:0 auto 38px}
-h2{font-size:clamp(30px,4vw,43px);line-height:1.2;letter-spacing:-1.5px;margin:10px 0}
-.section-head p,.card p,.about p{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:white;padding:25px;border:1px solid var(--line);border-radius:16px;transition:.2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 15px 30px #202b5010}
-.icon{width:45px;height:45px;border-radius:12px;background:#efedff;color:var(--purple);display:grid;place-items:center;font-size:23px;font-weight:bold}
-.card h3{margin:17px 0 7px}
-.more{color:var(--purple);font-weight:800;font-size:13px}
+.head{text-align:center;max-width:750px;margin:0 auto 38px}
+h2{font-size:clamp(29px,4vw,42px);line-height:1.2;letter-spacing:-1.4px;margin:10px 0}
+.head p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:white;padding:24px;border:1px solid var(--line);border-radius:16px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 30px #1a27500d;border-color:#d0caff}
+.icon{width:44px;height:44px;border-radius:12px;background:#efedff;color:var(--purple);display:grid;place-items:center;font-size:21px;font-weight:900}
+.card h3{margin:15px 0 7px;font-size:17px}
+.card p{font-size:13px;color:var(--muted)}
+.textlink{color:var(--purple);font-size:12px;font-weight:900}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.dark-panel{background:var(--navy);color:white;padding:35px;border-radius:20px}
-.dark-panel p{color:#c6cce0}
-.benefits{padding-left:20px}
-.benefits li{margin:12px 0}
-.case{background:#fff;padding:25px;border:1px solid var(--line);border-radius:16px}
-.tag{color:var(--purple);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
-.price{background:white;border:1px solid var(--line);padding:26px;border-radius:16px}
-.price.featured{border:2px solid var(--purple);box-shadow:0 15px 30px #6557ff12}
-.price strong{font-size:29px}
-.price small{color:var(--muted)}
-.price ul{padding-left:20px;color:var(--muted);font-size:14px}
-.faq{max-width:800px;margin:auto;display:grid;gap:12px}
-details{padding:18px 20px;border:1px solid var(--line);background:white;border-radius:12px}
-summary{font-weight:800;cursor:pointer}
-details p{color:var(--muted);font-size:14px}
-.contact{background:var(--navy);color:white;border-radius:22px;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.contact p{color:#c6cce0}
-form{background:white;color:var(--text);border-radius:14px;padding:22px}
-label{display:block;font-size:12px;font-weight:800;margin:12px 0 5px}
-input,select,textarea{width:100%;padding:12px;border:1px solid #dce0ec;border-radius:8px;font:14px Arial}
+.dark{background:linear-gradient(140deg,#10172e,#292651);color:white;border-radius:20px;padding:32px}
+.dark p{color:#c8cde0}
+.dark h3{font-size:27px;line-height:1.3}
+.checklist{padding-left:20px}
+.checklist li{margin:10px 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{background:white;border:1px solid var(--line);padding:20px;border-radius:14px}
+.step b{font-size:11px;color:var(--purple);letter-spacing:1px}
+.step h3{font-size:16px;margin:10px 0 4px}
+.step p{font-size:12px;color:var(--muted)}
+.case{background:white;border:1px solid var(--line);padding:23px;border-radius:15px}
+.tag{display:inline-block;color:var(--purple);background:#efedff;border-radius:20px;padding:5px 9px;font-size:10px;font-weight:900;text-transform:uppercase}
+.case p{font-size:13px;color:var(--muted)}
+/* pricing */
+.pricing-intro{max-width:780px;margin:0 auto 25px;text-align:center;color:var(--muted);font-size:14px}
+.price-tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:25px 0 30px}
+.price-tabs button{border:1px solid #dfe3ee;background:white;border-radius:9px;padding:12px 18px;font-weight:800;cursor:pointer;color:#4c5870}
+.price-tabs button.active{background:var(--navy);color:white;border-color:var(--navy)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.price-card{background:white;border:1px solid var(--line);border-radius:16px;padding:23px;position:relative}
+.price-card.featured{border:2px solid var(--purple);box-shadow:0 14px 35px #6557ff15}
+.popular{display:inline-block;background:var(--purple);color:white;font-size:10px;font-weight:900;border-radius:20px;padding:5px 9px;margin-bottom:10px}
+.price-card h3{font-size:18px;margin:5px 0}
+.price-card .desc{font-size:12px;color:var(--muted);min-height:45px}
+.amount{font-size:30px;letter-spacing:-1px;font-weight:900;margin-top:16px}
+.amount small{font-size:11px;letter-spacing:0;color:var(--muted);font-weight:600}
+.term{font-size:12px;color:var(--muted)}
+.saving{display:inline-block;background:#e0fff2;color:var(--green);border-radius:7px;padding:5px 8px;font-size:11px;font-weight:900;margin:10px 0}
+.price-card ul{padding-left:18px;font-size:12px;color:#566278;margin:18px 0}
+.price-card li{margin:7px 0}
+.price-card .btn{width:100%;text-align:center}
+.price-card[hidden]{display:none}
+.price-note{font-size:11px;color:var(--muted);text-align:center;margin-top:20px}
+.one-time{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:22px}
+.one-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px}
+.one-card strong{font-size:25px;display:block;margin:10px 0 3px}
+.one-card p{font-size:12px;color:var(--muted)}
+.table-wrap{overflow-x:auto;background:white;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;min-width:630px;font-size:13px}
+th,td{padding:15px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#f0efff;color:#4e43c8}
+tr:last-child td{border-bottom:0}
+.faq{max-width:830px;margin:auto;display:grid;gap:11px}
+details{background:white;border:1px solid var(--line);padding:17px 20px;border-radius:12px}
+summary{cursor:pointer;font-weight:800}
+details p{font-size:13px;color:var(--muted)}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;background:var(--navy);color:white;padding:35px;border-radius:20px}
+.contact p{color:#c9cfe0;font-size:14px}
+.contact-form{background:white;color:var(--ink);padding:22px;border-radius:14px}
+label{display:block;font-size:11px;font-weight:900;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #dce1ec;border-radius:8px;font:14px Arial;background:#fbfcff}
 textarea{min-height:85px}
-form button{width:100%;margin-top:15px}
-footer{background:#090e1c;color:#d5d9e6;padding:30px 0}
-footer p{font-size:13px;color:#aab2c6}
-.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
-@media(max-width:800px){
-.hero-grid,.split,.contact{grid-template-columns:1fr}
-.grid{grid-template-columns:repeat(2,1fr)}
-.links{gap:10px;flex-wrap:wrap;justify-content:flex-end}
-.hero{padding:60px 0}
-}
-@media(max-width:560px){
-.grid{grid-template-columns:1fr}
-nav{align-items:flex-start;padding:17px 0;flex-direction:column}
-.links{justify-content:flex-start;gap:15px;flex-wrap:wrap}
-h1{font-size:43px;letter-spacing:-1.5px}
-section.content{padding:55px 0}
-.contact{padding:20px}
-}
+.contact-form .btn{width:100%;margin-top:15px}
+footer{background:#090e1c;color:#dce1ee;padding:30px 0}
+footer p{font-size:12px;color:#aab3c6}
+.footlinks{display:flex;gap:17px;flex-wrap:wrap;font-size:12px}
+@media(max-width:850px){.hero-grid,.split,.contact{grid-template-columns:1fr}.grid,.price-grid,.one-time{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.links{gap:10px;flex-wrap:wrap;justify-content:flex-end}}
+@media(max-width:580px){.wrap{width:92%}.top .wrap{justify-content:center}.top span:last-child{display:none}nav{padding:14px 0;align-items:flex-start;flex-direction:column}.links{justify-content:flex-start;gap:13px}.hero{padding:55px 0}.hero h1{font-size:42px;letter-spacing:-1.5px}.hero .lead{font-size:15px}section.section{padding:55px 0}.grid,.price-grid,.one-time,.steps{grid-template-columns:1fr}.contact{padding:20px}.price-card .desc{min-height:0}.trustrow{font-size:10px}}
 </style>
 </head>
 <body>
 
-<header>
-<nav class="wrap">
-<a class="brand" href="#home">A<span>.</span> ANIKET DIGITAL</a>
+<div class="top"><div class="wrap">
+<span>📍 Indore, Madhya Pradesh, India</span>
+<span>Need digital marketing? <a href="https://wa.me/917970035537">Chat on WhatsApp ↗</a></span>
+</div></div>
+
+<header><nav class="wrap">
+<a class="brand" href="#home">ANIKET <span>DIGITAL.</span></a>
 <div class="links">
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#pricing">Pricing</a>
-<a href="#contact">Contact</a>
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+<a href="#pricing">Pricing</a><a href="#portfolio">Portfolio</a><a href="#faq">FAQs</a><a href="#contact">Contact</a>
 </div>
-</nav>
-</header>
+</nav></header>
 
 <main>
-<section class="hero" id="home">
-<div class="wrap hero-grid">
+<section class="hero" id="home"><div class="wrap hero-grid">
 <div>
-<div class="kicker">Digital Marketing Agency · Indore</div>
-<h1>Grow Your Business With <span class="gradient">Strategic Digital Marketing.</span></h1>
-<p class="lead">We help businesses improve online visibility, attract relevant customers and build a stronger digital presence through practical marketing strategies.</p>
+<span class="pill">Digital Marketing · Website Growth · Lead Generation</span>
+<h1>Build Your Brand.<br>Reach More Customers.<br><span class="gradient">Grow Your Business.</span></h1>
+<p class="lead">Hello, I'm Aniket Koshti, a digital marketing professional based in Indore, Madhya Pradesh. I help businesses strengthen their online presence through SEO, local search optimisation, paid advertising, social media and website development.</p>
 <div class="actions">
-<a class="btn" href="#contact">Get Free Consultation ↗</a>
-<a class="btn-light" href="#services">Explore Services ↓</a>
+<a class="btn" href="#contact">Get a Free Consultation ↗</a>
+<a class="btn-light" href="#services">Explore My Services ↓</a>
 </div>
-<p>✓ Clear strategy &nbsp; ✓ Transparent reporting &nbsp; ✓ Business-focused execution</p>
+<div class="hero-points"><span>✓ Clear strategy</span><span>✓ Practical execution</span><span>✓ Transparent communication</span></div>
 </div>
-<div class="dashboard">
-<h3>Your Digital Growth Plan</h3>
-<p style="color:#647084">A smarter approach to growing your online presence.</p>
-<div class="stats">
-<div class="stat"><small>Organic Growth</small><strong>SEO</strong><small>Long-term visibility</small></div>
-<div class="stat"><small>Paid Campaigns</small><strong>Ads</strong><small>Targeted reach</small></div>
-<div class="stat"><small>Local Presence</small><strong>Maps</strong><small>Local discovery</small></div>
-<div class="stat"><small>Online Experience</small><strong>Web</strong><small>Better conversion paths</small></div>
+<div class="panel">
+<div class="kicker">Your digital growth roadmap</div>
+<h3>Marketing with a clear purpose.</h3>
+<p class="muted">The right mix of search, content, advertising and website improvements—based on your business goals.</p>
+<div class="stat-grid">
+<div class="stat"><small>Organic visibility</small><strong>SEO</strong><small>Search engine growth</small></div>
+<div class="stat"><small>Local discovery</small><strong>Maps</strong><small>Google Business Profile</small></div>
+<div class="stat"><small>Paid campaigns</small><strong>Ads</strong><small>Reach relevant audiences</small></div>
+<div class="stat"><small>Online experience</small><strong>Web</strong><small>Website development</small></div>
 </div>
-<div class="barset">
-<i style="height:25%"></i><i style="height:40%"></i><i style="height:33%"></i><i style="height:55%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:66%"></i><i style="height:88%"></i><i style="height:100%"></i>
+<div class="bars"><i style="height:25%"></i><i style="height:38%"></i><i style="height:32%"></i><i style="height:54%"></i><i style="height:47%"></i><i style="height:68%"></i><i style="height:63%"></i><i style="height:84%"></i><i style="height:100%"></i></div>
+<p class="muted" style="font-size:11px">Plan · Execute · Measure · Improve</p>
 </div>
-</div>
-</div>
-</section>
+</div></section>
 
 <div class="trust"><div class="wrap">
-<div class="kicker">Digital solutions built around your goals</div>
-<div class="trust-row"><span>SEO</span><span>LOCAL SEARCH</span><span>GOOGLE ADS</span><span>META ADS</span><span>WEBSITE DESIGN</span></div>
+<div class="kicker">Digital services for business growth</div>
+<div class="trustrow"><span>SEO</span><span>LOCAL SEO</span><span>GOOGLE ADS</span><span>META ADS</span><span>SOCIAL MEDIA</span><span>WEBSITES</span></div>
 </div></div>
 
-<section class="content" id="services">
-<div class="wrap">
-<div class="section-head"><div class="kicker">Our Services</div><h2>Everything You Need to Grow Online</h2><p>Practical digital marketing services tailored to your business, audience and budget.</p></div>
+<section class="section" id="about"><div class="wrap split">
+<div class="dark">
+<span class="pill">Meet Your Digital Marketing Partner</span>
+<h3>Smart digital marketing starts with understanding your business.</h3>
+<p>My approach is to understand your goals first, identify the most useful opportunities, and then build a practical plan that fits your business and budget.</p>
+<p><strong>Location:</strong> Indore, Madhya Pradesh, India</p>
+<p><strong>Working style:</strong> Strategy-focused, transparent and improvement-driven</p>
+<a class="btn" href="#contact">Let's Discuss Your Business ↗</a>
+</div>
+<div>
+<div class="kicker">About Aniket Koshti</div>
+<h2>A practical approach to digital growth.</h2>
+<p class="muted">I work across core digital marketing activities, including website SEO, Local SEO, Google Business Profile management, Google Ads, Meta Ads, social media marketing and website development.</p>
+<p class="muted">The goal is not just to make a business look active online. It is to build a stronger digital foundation, help the right audience find the business, make services easier to understand, and create clear paths for potential customers to enquire.</p>
+<ul class="checklist">
+<li>Understand your business, audience and competitors.</li>
+<li>Prioritise high-value marketing opportunities.</li>
+<li>Improve website pages and local search presence.</li>
+<li>Manage campaigns with clear objectives.</li>
+<li>Review performance and identify next steps.</li>
+</ul>
+<a class="btn" href="#pricing">Explore Service Packages ↗</a>
+</div>
+</div></section>
+
+<section class="section white" id="services"><div class="wrap">
+<div class="head"><div class="kicker">Services</div><h2>Complete Digital Marketing Solutions</h2><p>Choose a single service or combine services into a plan based on your business goals.</p></div>
 <div class="grid">
-<article class="card"><div class="icon">⌕</div><h3>SEO Services</h3><p>Technical SEO, on-page optimisation, content improvements and internal linking to support organic visibility.</p><a class="more" href="#contact">Discuss SEO ↗</a></article>
-<article class="card"><div class="icon">⌖</div><h3>Local SEO & Google Profile</h3><p>Improve your Google Business Profile, local relevance and customer discovery across local searches.</p><a class="more" href="#contact">Improve Local Visibility ↗</a></article>
-<article class="card"><div class="icon">↗</div><h3>Google Ads</h3><p>Search campaign setup, keyword targeting, conversion tracking and ongoing campaign optimisation.</p><a class="more" href="#contact">Plan Google Ads ↗</a></article>
-<article class="card"><div class="icon">◎</div><h3>Meta Ads</h3><p>Facebook and Instagram campaigns to reach relevant audiences and generate enquiries.</p><a class="more" href="#contact">Discuss Meta Ads ↗</a></article>
-<article class="card"><div class="icon">▤</div><h3>Website Development</h3><p>Responsive business websites with clear messaging, fast-loading layouts and SEO-friendly foundations.</p><a class="more" href="#contact">Build Your Website ↗</a></article>
-<article class="card"><div class="icon">◉</div><h3>Social Media Marketing</h3><p>Content planning and channel management to build consistency and strengthen brand communication.</p><a class="more" href="#contact">Plan Your Content ↗</a></article>
-</div>
-</div>
-</section>
+<article class="card"><div class="icon">⌕</div><h3>Website SEO</h3><p>On-page SEO, technical checks, metadata, heading structure, internal linking, content recommendations and search visibility improvements.</p><a class="textlink" href="#pricing">View SEO pricing ↗</a></article>
+<article class="card"><div class="icon">⌖</div><h3>Local SEO</h3><p>Location-focused optimisation to help local customers discover your services through relevant searches.</p><a class="textlink" href="#pricing">View Local SEO pricing ↗</a></article>
+<article class="card"><div class="icon">G</div><h3>Google Business Profile</h3><p>Profile setup and optimisation, business information checks, categories, services, posts and ongoing profile management.</p><a class="textlink" href="#pricing">View GBP pricing ↗</a></article>
+<article class="card"><div class="icon">↗</div><h3>Google Ads</h3><p>Campaign planning, keyword targeting, search ads, conversion tracking and ongoing campaign management.</p><a class="textlink" href="#pricing">View Google Ads pricing ↗</a></article>
+<article class="card"><div class="icon">◎</div><h3>Meta Ads</h3><p>Facebook and Instagram campaign management, audience targeting, campaign optimisation and performance reviews.</p><a class="textlink" href="#pricing">View Meta Ads pricing ↗</a></article>
+<article class="card"><div class="icon">◉</div><h3>Social Media Marketing</h3><p>Content planning, social media management, brand consistency and channel growth support.</p><a class="textlink" href="#pricing">View social media pricing ↗</a></article>
+<article class="card"><div class="icon">▤</div><h3>Website Development</h3><p>Business websites with responsive layouts, clear service information, contact options and SEO-friendly foundations.</p><a class="textlink" href="#one-time">View website packages ↗</a></article>
+<article class="card"><div class="icon">⌘</div><h3>SEO Audit & Consultation</h3><p>Review website issues, identify optimisation opportunities and create a practical priority list.</p><a class="textlink" href="#one-time">View audit pricing ↗</a></article>
+<article class="card"><div class="icon">✦</div><h3>Digital Growth Planning</h3><p>Discuss your website, target customers, marketing channels and next steps to choose a suitable service mix.</p><a class="textlink" href="#contact">Discuss your goals ↗</a></article>
+</div></div></section>
 
-<section class="content white" id="about">
-<div class="wrap split">
-<div class="dark-panel"><div class="kicker">Our Approach</div><h2>Marketing should be an investment, not guesswork.</h2><p>Understand the audience. Choose the right channels. Measure the work. Improve the strategy.</p></div>
-<div class="about"><div class="kicker">About Aniket Digital</div><h2>A Practical Partner for Business Growth</h2><p>We help businesses strengthen their digital foundations through search visibility, targeted advertising and conversion-focused websites.</p><ul class="benefits"><li>Strategy aligned with your business goals</li><li>Clear priorities and practical execution</li><li>Reporting focused on useful outcomes</li><li>Flexible support for local and growing businesses</li></ul><a class="btn" href="#contact">Let's Discuss Your Business ↗</a></div>
-</div>
-</section>
+<section class="section" id="process"><div class="wrap">
+<div class="head"><div class="kicker">How I Work</div><h2>A Clear Process From Start to Finish</h2><p>You know what is included, what happens next and how progress will be reviewed.</p></div>
+<div class="steps">
+<div class="step"><b>STEP 01</b><h3>Discovery</h3><p>Understand your business, services, audience and goals.</p></div>
+<div class="step"><b>STEP 02</b><h3>Strategy</h3><p>Review the current situation and prioritise useful activities.</p></div>
+<div class="step"><b>STEP 03</b><h3>Execution</h3><p>Complete agreed work with a focus on quality and consistency.</p></div>
+<div class="step"><b>STEP 04</b><h3>Review</h3><p>Discuss progress, learnings and opportunities for improvement.</p></div>
+</div></div></section>
 
-<section class="content" id="portfolio">
-<div class="wrap"><div class="section-head"><div class="kicker">Portfolio</div><h2>Solutions for Real Business Challenges</h2><p>Sample project categories. Add approved client names and verified results when you have permission to publish them.</p></div>
+<section class="section white" id="portfolio"><div class="wrap">
+<div class="head"><div class="kicker">Portfolio & Project Experience</div><h2>Work Across Key Digital Marketing Activities</h2><p>Below are project categories and examples of work types. Specific client names, screenshots and performance results can be added when permission and verified evidence are available.</p></div>
 <div class="grid">
-<article class="case"><span class="tag">Local SEO</span><h3>Local Business Visibility</h3><p>Google Business Profile improvements, local pages and clearer paths from search to enquiry.</p></article>
-<article class="case"><span class="tag">Website SEO</span><h3>Organic Search Foundation</h3><p>Metadata, page structure, internal linking and technical checks to support search visibility.</p></article>
-<article class="case"><span class="tag">Paid Media</span><h3>Lead Generation Campaigns</h3><p>Campaign planning, audience targeting, landing page alignment and conversion tracking.</p></article>
-</div></div>
-</section>
+<article class="case"><span class="tag">Local SEO</span><h3>Local Business Optimisation</h3><p>Google Business Profile updates, local search recommendations, business information checks and location-focused content.</p></article>
+<article class="case"><span class="tag">Website SEO</span><h3>On-Page & Technical SEO</h3><p>Page titles, descriptions, heading structure, image alt text, internal links and technical issue checks.</p></article>
+<article class="case"><span class="tag">Content SEO</span><h3>Service Pages & Content</h3><p>Improve service-page structure, content relevance, FAQs and internal linking opportunities.</p></article>
+<article class="case"><span class="tag">Paid Advertising</span><h3>Campaign Planning</h3><p>Audience or keyword research, campaign structure, landing page alignment and conversion measurement planning.</p></article>
+<article class="case"><span class="tag">Website Development</span><h3>Business Website Structure</h3><p>Plan service pages, contact options, responsive layouts and a clear path from visitor to enquiry.</p></article>
+<article class="case"><span class="tag">Reporting</span><h3>Performance Review</h3><p>Review available search, website or advertising data and turn observations into practical next steps.</p></article>
+</div></div></section>
 
-<section class="content white" id="pricing">
-<div class="wrap"><div class="section-head"><div class="kicker">Pricing</div><h2>Clear Starting Packages</h2><p>Indicative starting prices. Final quotation depends on project scope and business needs.</p></div>
-<div class="grid">
-<article class="price"><h3>Local Visibility</h3><p>For businesses improving their local search presence.</p><strong>₹3,000</strong> <small>/ month onwards</small><ul><li>Google Business Profile support</li><li>Local visibility recommendations</li><li>Monthly activity summary</li></ul><a class="btn" href="#contact">Request a Quote</a></article>
-<article class="price featured"><div class="kicker">Popular Choice</div><h3>SEO Growth</h3><p>For businesses improving website visibility and organic discovery.</p><strong>₹7,000</strong> <small>/ month onwards</small><ul><li>On-page SEO improvements</li><li>Technical checks and priorities</li><li>Internal linking recommendations</li><li>Progress reporting</li></ul><a class="btn" href="#contact">Discuss SEO</a></article>
-<article class="price"><h3>Paid Ads Management</h3><p>For businesses reaching customers through paid campaigns.</p><strong>₹5,000</strong> <small>/ month onwards</small><ul><li>Campaign setup and management</li><li>Audience or keyword targeting</li><li>Performance monitoring</li><li>Optimisation recommendations</li></ul><a class="btn" href="#contact">Plan Your Ads</a></article>
-</div><p style="text-align:center;color:#647084;font-size:12px">Advertising spend and third-party tools are separate where applicable.</p>
+<section class="section" id="pricing"><div class="wrap">
+<div class="head"><div class="kicker">Transparent Pricing</div><h2>Choose Your Service Duration</h2><p>Compare monthly, 6-month and 12-month plans. Longer plans offer a lower effective monthly cost.</p></div>
+<p class="pricing-intro">Select a duration below to compare the prices for each service. These are service fees; advertising spend and any separately agreed third-party costs are not included.</p>
+<div class="price-tabs">
+<button class="active" data-term="monthly">Monthly Plans</button>
+<button data-term="six">6-Month Offers</button>
+<button data-term="twelve">12-Month Offers</button>
 </div>
-</section>
 
-<section class="content" id="faq">
-<div class="wrap"><div class="section-head"><div class="kicker">FAQs</div><h2>Frequently Asked Questions</h2></div>
+<div class="price-grid">
+<article class="price-card" data-service="gbp">
+<h3>Google Business Profile</h3><p class="desc">Profile management for local business visibility.</p>
+<div class="price-value" data-monthly="₹3,000" data-six="₹16,800" data-twelve="₹30,000"></div>
+<div class="term"></div><div class="saving"></div>
+<ul><li>Profile information and optimisation support</li><li>Business categories and services review</li><li>Local presence recommendations</li><li>Ongoing profile support as agreed</li></ul>
+<a class="btn order" data-name="Google Business Profile" href="#contact">Choose This Plan</a>
+</article>
+
+<article class="price-card featured" data-service="seo">
+<span class="popular">SEO GROWTH</span>
+<h3>Website SEO</h3><p class="desc">For businesses investing in organic search visibility.</p>
+<div class="price-value" data-monthly="₹7,000" data-six="₹39,000" data-twelve="₹72,000"></div>
+<div class="term"></div><div class="saving"></div>
+<ul><li>On-page SEO improvements</li><li>Technical checks and recommendations</li><li>Metadata and heading optimisation</li><li>Internal linking recommendations</li><li>Progress review and priorities</li></ul>
+<a class="btn order" data-name="Website SEO" href="#contact">Choose This Plan</a>
+</article>
+
+<article class="price-card" data-service="social">
+<h3>Social Media Marketing</h3><p class="desc">Consistent brand communication and social media support.</p>
+<div class="price-value" data-monthly="₹6,000" data-six="₹33,000" data-twelve="₹60,000"></div>
+<div class="term"></div><div class="saving"></div>
+<ul><li>Content planning</li><li>Social channel management as agreed</li><li>Brand consistency support</li><li>Periodic activity review</li></ul>
+<a class="btn order" data-name="Social Media Marketing" href="#contact">Choose This Plan</a>
+</article>
+
+<article class="price-card" data-service="meta">
+<h3>Meta Ads Management</h3><p class="desc">Facebook and Instagram campaign management.</p>
+<div class="price-value" data-monthly="₹5,000" data-six="₹27,000" data-twelve="₹48,000"></div>
+<div class="term"></div><div class="saving"></div>
+<ul><li>Campaign setup and management</li><li>Audience targeting</li><li>Performance monitoring</li><li>Optimisation recommendations</li></ul>
+<a class="btn order" data-name="Meta Ads Management" href="#contact">Choose This Plan</a>
+</article>
+
+<article class="price-card" data-service="googleads">
+<h3>Google Ads Management</h3><p class="desc">Manage paid search campaigns with clear objectives.</p>
+<div class="price-value" data-monthly="₹6,000" data-six="₹33,000" data-twelve="₹60,000"></div>
+<div class="term"></div><div class="saving"></div>
+<ul><li>Campaign setup and management</li><li>Keyword and search intent review</li><li>Campaign performance monitoring</li><li>Optimisation recommendations</li></ul>
+<a class="btn order" data-name="Google Ads Management" href="#contact">Choose This Plan</a>
+</article>
+
+<article class="price-card" data-service="localseo">
+<h3>Local SEO</h3><p class="desc">Local search optimisation for businesses serving a specific area.</p>
+<div class="price-value" data-monthly="From ₹5,999" data-six="Custom Quote" data-twelve="Custom Quote"></div>
+<div class="term"></div><div class="saving"></div>
+<ul><li>Local search opportunity review</li><li>Location-page recommendations</li><li>Local SEO priorities</li><li>Scope confirmed before starting</li></ul>
+<a class="btn order" data-name="Local SEO" href="#contact">Request a Quote</a>
+</article>
+</div>
+<p class="price-note">6-month and 12-month amounts are package totals, not monthly amounts. Local SEO plans beyond the starting price require a custom quotation.</p>
+
+<div style="margin-top:45px">
+<div class="head"><div class="kicker">Package Comparison</div><h2>Monthly vs Long-Term Pricing</h2><p>See the total plan fee and estimated saving compared with paying the monthly rate for the full duration.</p></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Service</th><th>Monthly</th><th>6-Month Total</th><th>6-Month Saving</th><th>12-Month Total</th><th>12-Month Saving</th></tr></thead>
+<tbody>
+<tr><td>Google Business Profile</td><td>₹3,000</td><td>₹16,800</td><td>₹1,200</td><td>₹30,000</td><td>₹6,000</td></tr>
+<tr><td>Website SEO</td><td>₹7,000</td><td>₹39,000</td><td>₹3,000</td><td>₹72,000</td><td>₹12,000</td></tr>
+<tr><td>Social Media Marketing</td><td>₹6,000</td><td>₹33,000</td><td>₹3,000</td><td>₹60,000</td><td>₹12,000</td></tr>
+<tr><td>Meta Ads Management</td><td>₹5,000</td><td>₹27,000</td><td>₹3,000</td><td>₹48,000</td><td>₹12,000</td></tr>
+<tr><td>Google Ads Management</td><td>₹6,000</td><td>₹33,000</td><td>₹3,000</td><td>₹60,000</td><td>₹12,000</td></tr>
+</tbody></table></div>
+<p class="price-note">Savings are calculated against the monthly fee multiplied by the number of months. Confirm scope, payment terms and deliverables in the quotation.</p>
+</div>
+</div></section>
+
+<section class="section white" id="one-time"><div class="wrap">
+<div class="head"><div class="kicker">One-Time Deals</div><h2>Fixed-Fee Setup & Website Packages</h2><p>For businesses that need a defined one-time project rather than an ongoing monthly service.</p></div>
+<div class="one-time">
+<article class="one-card"><span class="tag">Profile Setup</span><h3>Google Business Profile Setup</h3><strong>₹2,500</strong><p>One-time setup service. Eligibility, verification and required information will be reviewed first.</p><a class="btn" href="#contact">Request Setup</a></article>
+<article class="one-card"><span class="tag">Basic Website</span><h3>Business Website — Up to 5 Pages</h3><strong>₹15,000</strong><p>Starting price for a basic business website. Final scope depends on pages, features and content.</p><a class="btn" href="#contact">Discuss Website</a></article>
+<article class="one-card"><span class="tag">Professional Website</span><h3>Business Website — Up to 10 Pages</h3><strong>₹25,000</strong><p>Starting price for a larger business website with a more complete page structure.</p><a class="btn" href="#contact">Discuss Website</a></article>
+<article class="one-card"><span class="tag">E-commerce</span><h3>Online Store Development</h3><strong>From ₹35,000</strong><p>Starting price. Product volume, payment setup, shipping rules and platform features affect the final quotation.</p><a class="btn" href="#contact">Discuss Store</a></article>
+<article class="one-card"><span class="tag">Website Review</span><h3>SEO Audit & Consultation</h3><strong>₹3,000</strong><p>One-time review of SEO issues and optimisation opportunities, with recommendations for next steps.</p><a class="btn" href="#contact">Book an Audit</a></article>
+<article class="one-card"><span class="tag">Custom Project</span><h3>Custom Digital Marketing Plan</h3><strong>Custom Quote</strong><p>For businesses that need multiple services, a campaign plan or a combination of website and marketing support.</p><a class="btn" href="#contact">Get a Quote</a></article>
+</div>
+<p class="price-note">One-time fees cover only the agreed scope. Domain, hosting, paid plugins, premium themes, advertising budgets, taxes and other third-party charges are separate if required.</p>
+</div></section>
+
+<section class="section" id="faq"><div class="wrap">
+<div class="head"><div class="kicker">Frequently Asked Questions</div><h2>Before You Get Started</h2></div>
 <div class="faq">
-<details><summary>Which businesses can work with you?</summary><p>We can discuss local service businesses, clinics, professional services, e-commerce and other growing businesses.</p></details>
-<details><summary>How long does SEO take to show results?</summary><p>SEO is a long-term channel. Timelines depend on competition, website condition, location and implementation. Specific rankings cannot be guaranteed.</p></details>
-<details><summary>Is ad spend included in the management fee?</summary><p>No. Advertising spend is paid separately to Google or Meta.</p></details>
-<details><summary>Can I start with one service?</summary><p>Yes. You can start with one service and expand as your business needs change.</p></details>
-</div></div>
-</section>
+<details><summary>What is included in a monthly digital marketing plan?</summary><p>Deliverables depend on the selected service and agreed scope. The quotation should specify activities, reporting, timelines and what is not included.</p></details>
+<details><summary>Is the 6-month or 12-month package paid monthly?</summary><p>The displayed 6-month and 12-month prices are total package fees. Payment milestones and whether instalments are available should be agreed in writing before the project starts.</p></details>
+<details><summary>Is Google Ads or Meta Ads budget included?</summary><p>No. The displayed price is for campaign management. Advertising spend paid to Google or Meta is separate.</p></details>
+<details><summary>Do you guarantee first-page Google rankings?</summary><p>No one can responsibly guarantee a specific Google ranking. SEO work focuses on improving technical quality, relevance, content and search visibility.</p></details>
+<details><summary>How much does website development cost?</summary><p>Basic websites start at ₹15,000 for up to 5 pages, professional websites start at ₹25,000 for up to 10 pages, and e-commerce projects start at ₹35,000. Final pricing depends on scope.</p></details>
+<details><summary>How do I start working with you?</summary><p>Send your business name, website if available, required service and main goal through the contact form. We can discuss the scope and prepare a quotation.</p></details>
+<details><summary>Are taxes and third-party tools included?</summary><p>Taxes, hosting, domains, premium tools and other third-party expenses should be confirmed in the quotation. They are not automatically included in the listed starting prices.</p></details>
+</div></div></section>
 
-<section class="content" id="contact">
-<div class="wrap contact">
-<div><div class="kicker">Let's Talk</div><h2>Ready to grow your business online?</h2><p>Share your requirements and start a practical conversation about your next steps.</p><p>📍 Indore, Madhya Pradesh, India</p><p>💬 WhatsApp: +91 79700 35537</p></div>
-<form id="leadForm">
+<section class="section" id="contact"><div class="wrap contact">
+<div><div class="kicker">Let's Work Together</div><h2>Tell Me About Your Business</h2><p>Share your goals and the service you need. I'll use these details to start a conversation about the right scope and package.</p><p><strong>Agency:</strong> Aniket Digital</p><p><strong>Contact:</strong> +91 79700 35537</p><p><strong>Location:</strong> Indore, Madhya Pradesh, India</p><p>Available services: SEO, Local SEO, Google Business Profile, Google Ads, Meta Ads, Social Media Marketing and Website Development.</p></div>
+<form class="contact-form" id="leadForm">
 <label for="name">Your Name *</label><input id="name" name="name" required placeholder="Enter your name">
 <label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" required placeholder="+91..." inputmode="tel">
-<label for="business">Business Name</label><input id="business" name="business" placeholder="Your business">
-<label for="service">Service Required *</label><select id="service" name="service" required><option value="">Choose service</option><option>SEO</option><option>Local SEO / Google Business Profile</option><option>Google Ads</option><option>Meta Ads</option><option>Website Development</option><option>Social Media Marketing</option><option>Not sure yet</option></select>
-<label for="message">Your Goal</label><textarea id="message" name="message" placeholder="What would you like to achieve?"></textarea>
+<label for="business">Business Name</label><input id="business" name="business" placeholder="Your business name">
+<label for="service">Service Required *</label><select id="service" name="service" required><option value="">Select a service</option><option>Website SEO</option><option>Local SEO</option><option>Google Business Profile</option><option>Google Ads Management</option><option>Meta Ads Management</option><option>Social Media Marketing</option><option>Website Development</option><option>SEO Audit & Consultation</option><option>Multiple Services / Custom Plan</option></select>
+<label for="duration">Preferred Duration</label><select id="duration" name="duration"><option>Not decided</option><option>Monthly</option><option>6 Months</option><option>12 Months</option><option>One-time project</option></select>
+<label for="budget">Approximate Budget</label><select id="budget" name="budget"><option>Not decided</option><option>Under ₹5,000</option><option>₹5,000–₹10,000</option><option>₹10,000–₹25,000</option><option>₹25,000+</option></select>
+<label for="message">Tell Me About Your Goal</label><textarea id="message" name="message" placeholder="Website URL, target location, goals or other requirements"></textarea>
 <button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button>
-<p style="font-size:11px;color:#647084">The form opens WhatsApp with your details ready to send. It does not store submissions in a database.</p>
+<p style="font-size:10px;color:#66738a">The form opens WhatsApp with your details ready to send. It does not store form submissions in a database.</p>
 </form>
-</div>
-</section>
+</div></section>
 </main>
 
-<footer><div class="wrap"><div class="brand">A<span>.</span> ANIKET DIGITAL</div><p>Digital marketing and website services for growing businesses.</p><div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="https://wa.me/917970035537">WhatsApp ↗</a></div><p>© <span id="year"></span> Aniket Digital. All rights reserved.</p></div></footer>
+<footer><div class="wrap">
+<div class="brand">ANIKET <span>DIGITAL.</span></div>
+<p>Digital marketing and website services for businesses that want to strengthen their online presence.</p>
+<div class="footlinks"><a href="#services">Services</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#one-time">One-Time Deals</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a><a href="https://wa.me/917970035537">WhatsApp ↗</a></div>
+<p>© <span id="year"></span> Aniket Digital. All rights reserved.</p>
+</div></footer>
 
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
+
+const tabButtons=document.querySelectorAll('.price-tabs button');
+const priceCards=document.querySelectorAll('.price-card');
+
+function updatePrices(term){
+  priceCards.forEach(card=>{
+    const value=card.querySelector('.price-value');
+    const termText=card.querySelector('.term');
+    const saving=card.querySelector('.saving');
+    value.textContent=value.dataset[term];
+    if(term==='monthly'){
+      termText.textContent='Billed monthly';
+      saving.textContent='';
+    }else if(term==='six'){
+      termText.textContent='Total for 6 months';
+      const monthly=card.dataset.service==='gbp'?3000:card.dataset.service==='seo'?7000:card.dataset.service==='social'?6000:card.dataset.service==='meta'?5000:card.dataset.service==='googleads'?6000:0;
+      const total=card.dataset.service==='gbp'?16800:card.dataset.service==='seo'?39000:card.dataset.service==='social'?33000:card.dataset.service==='meta'?27000:card.dataset.service==='googleads'?33000:0;
+      saving.textContent=monthly?'Save ₹'+(monthly*6-total).toLocaleString('en-IN'):'Quote based on scope';
+    }else{
+      termText.textContent='Total for 12 months';
+      const monthly=card.dataset.service==='gbp'?3000:card.dataset.service==='seo'?7000:card.dataset.service==='social'?6000:card.dataset.service==='meta'?5000:card.dataset.service==='googleads'?6000:0;
+      const total=card.dataset.service==='gbp'?30000:card.dataset.service==='seo'?72000:card.dataset.service==='social'?60000:card.dataset.service==='meta'?48000:card.dataset.service==='googleads'?60000:0;
+      saving.textContent=monthly?'Save ₹'+(monthly*12-total).toLocaleString('en-IN'):'Quote based on scope';
+    }
+  });
+  tabButtons.forEach(b=>b.classList.toggle('active',b.dataset.term===term));
+}
+tabButtons.forEach(b=>b.addEventListener('click',()=>updatePrices(b.dataset.term)));
+updatePrices('monthly');
+
+document.querySelectorAll('.order').forEach(link=>{
+  link.addEventListener('click',()=>{
+    const service=link.dataset.name;
+    document.getElementById('service').value=
+      service==='Google Business Profile'?'Google Business Profile':
+      service==='Website SEO'?'Website SEO':
+      service==='Social Media Marketing'?'Social Media Marketing':
+      service==='Meta Ads Management'?'Meta Ads Management':
+      service==='Google Ads Management'?'Google Ads Management':
+      service==='Local SEO'?'Local SEO':'Multiple Services / Custom Plan';
+  });
+});
+
 document.getElementById('leadForm').addEventListener('submit',function(e){
-e.preventDefault();
-const d=new FormData(this);
-const msg=`Hello Aniket Digital!%0AName: ${encodeURIComponent(d.get('name'))}%0APhone: ${encodeURIComponent(d.get('phone'))}%0ABusiness: ${encodeURIComponent(d.get('business')||'Not provided')}%0AService: ${encodeURIComponent(d.get('service'))}%0AGoal: ${encodeURIComponent(d.get('message')||'Not provided')}`;
-window.open('https://wa.me/917970035537?text='+msg,'_blank');
+  e.preventDefault();
+  const d=new FormData(this);
+  const text=
+    'Hello Aniket Digital!%0A'+
+    'Name: '+encodeURIComponent(d.get('name'))+'%0A'+
+    'Phone: '+encodeURIComponent(d.get('phone'))+'%0A'+
+    'Business: '+encodeURIComponent(d.get('business')||'Not provided')+'%0A'+
+    'Service: '+encodeURIComponent(d.get('service'))+'%0A'+
+    'Duration: '+encodeURIComponent(d.get('duration'))+'%0A'+
+    'Budget: '+encodeURIComponent(d.get('budget'))+'%0A'+
+    'Goal: '+encodeURIComponent(d.get('message')||'Not provided');
+  window.open('https://wa.me/917970035537?text='+text,'_blank');
 });
 </script>
 </body>
